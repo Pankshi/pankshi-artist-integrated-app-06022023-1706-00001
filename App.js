@@ -1,14 +1,14 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, SafeAreaView } from "react-native";
+import { StyleSheet, SafeAreaView } from "react-native";
 import Navigation from "./src/navigation";
+import { React } from "react";
 
-export default function App() {
+const App = () => {
   return (
     <SafeAreaView style={styles.root}>
       <Navigation />
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   root: {
@@ -16,3 +16,5 @@ const styles = StyleSheet.create({
     backgroundColor: "#ccffdd",
   },
 });
+
+export default App;

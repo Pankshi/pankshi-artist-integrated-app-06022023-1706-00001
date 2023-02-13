@@ -21,7 +21,7 @@ const SignUpScreen = () => {
   };
 
   const onResendPressed = () => {
-    // console.warn("Resend Pressed");
+    console.warn("Resend Pressed");
   };
 
   return (
