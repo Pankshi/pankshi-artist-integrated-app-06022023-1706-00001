@@ -51,6 +51,7 @@ const SignInScreen = () => {
           style={[styles.logo, { height: height * 0.3 }]}
           resizeMode="contain"
         />
+        <Text style={styles.logoname}>PANKSHI</Text>
         <CustomInput
           placeholder="Username"
           value={username}
@@ -91,6 +92,13 @@ const styles = StyleSheet.create({
     maxHeight: 200,
     maxWidth: 300,
     width: "40%",
+  },
+  logoname: {
+    fontSize: 15,
+    fontWeight: "bold",
+    color: "#051C60",
+    bottom: 30,
+    letterSpacing: 3,
   },
 });
 

@@ -33,7 +33,7 @@ const SignUpScreen = () => {
           value={code}
           setValue={setCode}
         />
-        <CustomButton text="Confrim" onPress={onConfirmPressed} />
+        <CustomButton text="Confirm" onPress={onConfirmPressed} />
         <CustomButton
           text="Resend Code"
           onPress={onResendPressed}
