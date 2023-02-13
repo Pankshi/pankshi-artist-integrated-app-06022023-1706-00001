@@ -11,18 +11,23 @@ import Logo from "../../../assets/images/Pankshi_logo.png";
 import CustomInput from "../../components/CustomInput";
 import CustomButton from "../../components/CustomButton";
 import { useState } from "react";
+import { useNavigation } from "@react-navigation/native";
+import SocialSignInButtons from "../../components/SocialSignInButtons";
 
 const SignInScreen = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const { height } = useWindowDimensions();
+  const navigation = useNavigation();
 
   const onSignInPressed = () => {
-    console.warn("Sign in");
+    // console.warn("Sign in");
+    navigation.navigate("Home");
   };
 
   const onForgotPasswordPressed = () => {
-    console.warn("Forgot Password");
+    // console.warn("Forgot Password");
+    navigation.navigate("ForgotPassword");
   };
 
   const onSignInFacebookPressed = () => {
@@ -34,7 +39,8 @@ const SignInScreen = () => {
   };
 
   const onSignUpPressed = () => {
-    console.warn("Sign up Pressed");
+    // console.warn("Sign up Pressed");
+    navigation.navigate("SignUp");
   };
 
   return (
@@ -63,19 +69,7 @@ const SignInScreen = () => {
           type="TERTIARY"
         />
 
-        <CustomButton
-          text="Sign In with Facebook"
-          onPress={onSignInFacebookPressed}
-          bgColor="#E7EAF4"
-          fgColor="#4765A9"
-        />
-
-        <CustomButton
-          text="Sign In with Google"
-          onPress={onSignInGooglePressed}
-          bgColor="#FAE9EA"
-          fgColor="#DD4D44"
-        />
+        <SocialSignInButtons></SocialSignInButtons>
 
         <CustomButton
           text="Don't have a account? Create One"
