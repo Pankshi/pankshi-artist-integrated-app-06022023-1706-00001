@@ -28,6 +28,19 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "appName": "PANKSHI",
+      "googleheetId": "1-8an4D-DcaQLCThmStfsLGlMjHLfXOqFp0rm-Sh2c5c",
+      "googleSheetName": "pankshi_users",
+      "googleApiKey": "AIzaSyD9jUZdD3PtnFwsa_729ZIruQ0vL1BgCbg",
+      "googlePostApi": "",
+      "googleGetApi": "",
+      "googleServiceAccountEmail": "pankshi-artist-data@shang-chi-97722.iam.gserviceaccount.com",
+      "googlePrivateKey": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDF6BTYzj5N/fKU\nm1fKGmkObb/OfRC3p2Jp0E/GvWfQKFtiCQ1B826M9JZGpGe4/gD+BcksAzLYC+LU\nmD4Q7svxbOcG3bUyj0nHiRMS50AnxlqqenACmvgxhVkNSe5psv1Us8qR1ELOpAZd\nXXKaKCii6aEt3oLI38gwlFLa2OqEfkTi9fUgbEEj0mSxZ+4RBomKVg8NCiwSlSqA\nwQdxEBFv7wqjU4NKc33RNYclossZ3lgg63a2JYpjywqiA3EE3oQtxynTVatkSq63\n3oztE0xeAXcgkrIyswEFW6S498bo/PjBYhdBUlgo+0YN9fMssVrA/fmRpcFKHaza\nwlKA6gzRAgMBAAECggEABa4utds4drudwevEYs3eixP6WjCyo39oyhUmysEJINkL\nHwEFppu85hSwjqvNgqFM6rR7YVvzAEqjC+JfEa/H1TVcEjXhUAwgHFu0pGBUaN2R\nRVqtmDj6Vyj24r2LkswY6BNou7PPVagMTUpz20eXqUlo+tpHNtynMB0y5sGaajAW\nFGQ8VIh77BjL1pK1GLctqXGDbEtk47IfALxZRzs8EZDOmjpA5Kp4UQy4Hrax/QV+\nM5I39tmqmUuBaEUQCPKBZRb8pXj3kXU22aaDmA3EZb8er/KFJpkpZvBGwt4c/Bs8\noPUneFDb9/e73cPhkrJ+c9ZLBuVJb+hJ5/J8crp6OQKBgQD3OP/oYJ+syNX1yRhV\nY9QQs1KmufqUSRXst9ZVrfu17xBS0FfufczgBTpX6wklvVnXvH7TUs73zA/NioRd\ndZWaoNLQzPzF0tBUcCheuDKeVM1usz6IiGs+36RuSe4alhLM2Vf/yu7KTwiyiRY9\nR+7afx0kTdSThY0p3DLnZ5W+tQKBgQDM7tlhwEgDC8oPAlPcN9kOcBCFDnJNmDrl\nUxwiDAh8fARJMhAk2tA5aAamySS7+0qpNhr8z5x7ijv74qhbxmMaOspA1cGnRHqm\npYH3Jdk9gUEJ7LZhDuXR+o9KdWmPjxsGo5/DuJAYb8mEr2D9zFTtESSiq8w78ZIa\nJsfS1KbLLQKBgQCAiED8duftdElRTSj6lDlYKXNKPZ0a5Vihxv6HczpP36fz9mAR\nHZSbz/wCY69Q0L5aHKUvh3kVeiGpMmAZGx4Z041ng3vT+gPYMqu6ezfN+7cG2+gi\nIhLoEGwz7vn9FpNVr5ZB5ib6Rdb2w7EtUS3MqZPkIRbpT+ERp2tLxh4jlQKBgE/b\nWzYuOWGGfIxwucD8ukZYAPf4cy4tffXS9wmFauEnanwjWAskgTN9h+oCQ6BFAgkC\nHm4ZcL7rVQiIgFaS7hdQhXPSWA4YLzs1D3oBc6/16CQ367HSnle+rYu0SRg6CawC\nosUf7Ha5SOu9c6wyrX1byszg6UsKjYZHSmKrnvtZAoGAHCobqSCYuaojJKtrPnHx\n29a7WpDqq6zaMtYaWTED1xfw+qnRq205EmGYAXbZE3K9jn4I0QoxXIsDewF3IAa3\nWUHMmo4DWTSPBQobD5pdgUUfzSExcQMhENi0ABRmzrKSTIU8vw+n2zbIC3vyUSvH\nUgZIqgemldSYa2Kt3N2ZHtw=\n-----END PRIVATE KEY-----\n",
+      "eas": {
+        "projectId": "65ad1c13-b020-4f71-9c85-a4692bc3ef6b"
+      }
     }
   }
 }
