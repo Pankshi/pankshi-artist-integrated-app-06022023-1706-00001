@@ -14,6 +14,9 @@ const ConfirmEmailScreen = () => {
   const navigation = useNavigation();
   const route = useRoute();
   const [mail, setEmail] = useState(route.params?.email);
+  const [firstname, setFirstname] = useState(route.params?.firstname);
+  const [lastname, setLastname] = useState(route.params?.lastname);
+  const [mobileno, setMobileno] = useState(route.params?.mobileno);
 
   const onConfirmPressed = () => {
     setconfirmemailPending(true);
@@ -31,6 +34,11 @@ const ConfirmEmailScreen = () => {
             setconfirmemailPending(false);
           }, 3000);
           navigation.navigate("Home");
+        } else {
+          setTimeout(() => {
+            setconfirmemailPending(false);
+          }, 3000);
+          console.warn(response.data);
         }
       })
       .catch((err) => {
@@ -39,12 +47,29 @@ const ConfirmEmailScreen = () => {
   };
 
   const onSignInPressed = () => {
-    // console.warn("Sign In Pressed");
     navigation.navigate("SignIn");
   };
 
   const onResendPressed = () => {
-    console.warn("Resend Pressed");
+    setconfirmemailPending(true);
+    axios
+      .post(
+        "https://us-central1-groovy-bonus-378512.cloudfunctions.net/pankshi_resend_otp",
+        {
+          email: mail,
+          firstname: firstname,
+          lastname: lastname,
+        }
+      )
+      .then((response) => {
+        setTimeout(() => {
+          setconfirmemailPending(false);
+        }, 3000);
+        alert(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (

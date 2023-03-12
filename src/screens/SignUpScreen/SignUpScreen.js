@@ -7,6 +7,7 @@ import SocialSignInButtons from "../../components/SocialSignInButtons";
 import { useNavigation } from "@react-navigation/native";
 import axios from "axios";
 import AppLoader from "../../components/AppLoader";
+import { isString } from "react-native-axios/lib/utils";
 
 const SignUpScreen = () => {
   const [signupPending, setSignupPending] = useState(false);
@@ -34,13 +35,20 @@ const SignUpScreen = () => {
         }
       )
       .then((response) => {
-        // console.warn(response.data[3]);
-        if (response.status == 200) {
+        if (isString(response.data)) {
+          setTimeout(() => {
+            setSignupPending(false);
+          }, 3000);
+          console.warn(response.data);
+        } else {
           setTimeout(() => {
             setSignupPending(false);
           }, 3000);
           navigation.navigate("ConfirmEmail", {
             email: response.data[3],
+            mobileno: response.data[7],
+            firstname: response.data[1],
+            lastname: response.data[2],
           });
         }
       })
