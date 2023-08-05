@@ -25,7 +25,7 @@ const ForgotPasswordScreen = () => {
       <View style={styles.root}>
         <Text style={styles.title}>Reset your Password</Text>
         <CustomInput
-          placeholder="Username"
+          placeholder="Email or Mobile Number"
           value={username}
           setValue={setusername}
         />
